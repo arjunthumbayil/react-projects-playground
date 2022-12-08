@@ -1,3 +1,4 @@
+// Restarting grocery bud
 import React, { useState, useEffect } from "react";
 import List from "./List";
 import Alert from "./Alert";
@@ -7,7 +8,7 @@ function App() {
   const [list, setList] = useState([]);
   const [isEditing, setIsEditing] = useState(false);
   const [editId, setEditId] = useState(null);
-  const [alert, setAlert] = useState({ show: false, msg: "", type: "" });
+  const [alert, setAlert] = useState({ show: true, msg: "", type: "" });
 
   const handleSubmit = (e) => {
     e.preventDefault();
