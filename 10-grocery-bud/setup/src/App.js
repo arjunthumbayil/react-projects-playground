@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import List from "./List";
 import Alert from "./Alert";
 
+//This part gets the values stored in the localhost
 const getLocalStorage = () => {
   const item = localStorage.getItem("list");
   if (item) {
